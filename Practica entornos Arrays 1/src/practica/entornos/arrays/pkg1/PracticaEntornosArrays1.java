@@ -18,8 +18,16 @@ public class PracticaEntornosArrays1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int numerosLeer;
         Scanner sc=new Scanner (System.in);
-        int numeros[]=new int[10];
+        do{
+        System.out.println("¿Cuantos numeros desea leer?(Maximo 10):");
+        numerosLeer=sc.nextInt();
+        if (numerosLeer>10){
+            System.out.println("Error, el maximo es de 10 numeros.");
+        }
+        }while (numerosLeer>10);
+        int numeros[]=new int[numerosLeer];
         
         for(int i=0;i<numeros.length;i++){
             System.out.println("Anota el numero "+i+":");

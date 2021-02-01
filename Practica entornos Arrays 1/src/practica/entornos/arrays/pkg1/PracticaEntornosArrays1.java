@@ -24,6 +24,12 @@ public class PracticaEntornosArrays1 {
         for(int i=0;i<numeros.length;i++){
             System.out.println("Anota el numero "+i+":");
             numeros[i]=sc.nextInt();
+            for(int contador=0;contador<i;contador++){
+                if (numeros[i]==numeros[contador]){
+                 System.out.println("Los numeros no pueden repetirse");
+                 i--;
+                }
+            }
             }
         Arrays.sort(numeros);
         

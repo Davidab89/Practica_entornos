@@ -5,6 +5,8 @@
  */
 package practica.entornos.arrays.pkg1;
 
+import java.util.*;
+
 /**
  *
  * @author David2
@@ -16,7 +18,18 @@ public class PracticaEntornosArrays1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Empiezo programa");
+        Scanner sc=new Scanner (System.in);
+        int numeros[]=new int[10];
+        
+        for(int i=0;i<numeros.length;i++){
+            System.out.println("Anota el numero "+i+":");
+            numeros[i]=sc.nextInt();
+            }
+        Arrays.sort(numeros);
+        
+        for(int i=0;i<numeros.length;i++){
+            System.out.println(numeros[i]);
+            }
     }
     
 }

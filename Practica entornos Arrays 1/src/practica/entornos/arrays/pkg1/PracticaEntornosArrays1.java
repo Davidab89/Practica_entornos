@@ -18,6 +18,7 @@ public class PracticaEntornosArrays1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
         int numerosLeer;
         Scanner sc=new Scanner (System.in);
         do{
@@ -43,14 +44,21 @@ public class PracticaEntornosArrays1 {
                 if (numeros[i]==numeros[contador]){
                  System.out.println("Los numeros no pueden repetirse");
                  i--;
+
                 }
             }
+        }
+        System.out.println("Introduce el numero que deseas buscar");
+        numBuscar = sc.nextInt();
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] == numeros[numBuscar]) {
+                System.out.println("se ha encontrado el numero");
             }
+        }
         Arrays.sort(numeros);
-        
-        for(int i=0;i<numeros.length;i++){
+
+        for (int i = 0; i < numeros.length; i++) {
             System.out.println(numeros[i]);
-            }
+        }
     }
-    
 }

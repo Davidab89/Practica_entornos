@@ -19,7 +19,7 @@ public class PracticaEntornosArrays1 {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        int numerosLeer;
+        int numerosLeer,numBuscar;
         Scanner sc=new Scanner (System.in);
         do{
         System.out.println("¿Cuantos numeros desea leer?(Maximo 10):");

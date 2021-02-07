@@ -43,7 +43,7 @@ public class PracticaEntornosArrays1 {
         numBuscar = sc.nextInt();
         for (int i = 0; i < numeros.length; i++) {
             if (numeros[i] == numeros[numBuscar]) {
-                System.out.println("se ha encontrado el numero");;
+                System.out.println("se ha encontrado el numero");
             }
         }
         Arrays.sort(numeros);

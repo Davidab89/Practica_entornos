@@ -27,6 +27,13 @@ public class PracticaEntornosArrays1 {
             System.out.println("Error, el maximo es de 10 numeros.");
         }
         }while (numerosLeer>10);
+         do{
+        System.out.println("¿Cuantos numeros desea leer?(Maximo 10):");
+        numerosLeer=sc.nextInt();
+        if (numerosLeer<0){
+            System.out.println("Error, el numero no puede ser negativo.");
+        }
+        }while (numerosLeer<0);
         int numeros[]=new int[numerosLeer];
         
         for(int i=0;i<numeros.length;i++){
